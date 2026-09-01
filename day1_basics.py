@@ -25,4 +25,4 @@ class sensor_humidity:
 
 sensor1 = sensor_humidity("kelembaban_ruang1", 60.0)
 sensor1.tambah_data(64.4)
-print(sensor1.cek_status())  # WARNING
+print(sensor1.cek_status())  # warning, karena data reading diatas threshold max
