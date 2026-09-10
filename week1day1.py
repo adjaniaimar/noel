@@ -1,5 +1,3 @@
-# DAY 1
-
 # LIST
 suhu_readings = [24.5, 25.1, 24.8, 30.2, 25.0]  # data sensor suhu (°C)
 print(suhu_readings[3])  # 30.2 — index ke-3
@@ -18,7 +16,7 @@ def cek_anomali(suhu, threshold):
         return "WARNING: suhu di atas normal!"
     return "Normal"
 
-print(cek_anomali(30.2, 28.0))  #kalo diatas angka dari data reading, maka akan muncul warning, jika tidak maka normal
+print(cek_anomali(30.2, 28.0))  # kalo diatas angka dari data reading, maka akan muncul warning, jika tidak maka normal
 
 # LOOPING
 for suhu in suhu_readings:
@@ -42,5 +40,3 @@ class Sensor:
 sensor1 = Sensor("suhu_ruang1", 28.0)
 sensor1.tambah_data(30.2)
 print(sensor1.cek_status())  # warning, karena data reading diatas threshold max
-
-# DAY 2
